@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Dgk-ov-mvm">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--TodayStocks-->
+        <scene sceneID="wg7-f3-ORb">
+            <objects>
+                <viewController id="8rJ-Kc-sve" customClass="PortfolioViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="3F0-9D-52p"/>
+                        <viewControllerLayoutGuide type="bottom" id="jsn-RE-p9q"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="QS5-Rx-YEW">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" keyboardDismissMode="onDrag" dataMode="prototypes" style="plain" allowsSelection="NO" rowHeight="50" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="x3G-kI-yX9">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="664"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="separatorColor" red="0.89411764709999997" green="0.85098039219999999" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <inset key="separatorInset" minX="10" minY="0.0" maxX="10" maxY="0.0"/>
+                                <color key="sectionIndexColor" red="0.15686274510000001" green="0.20000000000000001" blue="0.2784313725" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="sectionIndexBackgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="0wb-s2-wb9">
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="0wb-s2-wb9" id="N6R-xW-ns8">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="L0n-bF-fiz">
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="L0n-bF-fiz" id="2NP-ET-fHB">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="mbI-dx-aot">
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="mbI-dx-aot" id="EpL-Ao-lwL">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <sections/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="40" y="0.0" width="320" height="568"/>
+                                </variation>
+                                <connections>
+                                    <outlet property="dataSource" destination="8rJ-Kc-sve" id="YjQ-9j-bhg"/>
+                                    <outlet property="delegate" destination="8rJ-Kc-sve" id="wX6-54-ft2"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="tintColor" red="0.1215686275" green="0.61568627450000002" blue="0.58039215690000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="x3G-kI-yX9" firstAttribute="top" secondItem="QS5-Rx-YEW" secondAttribute="top" id="2Hr-NU-W6S"/>
+                            <constraint firstAttribute="trailing" secondItem="x3G-kI-yX9" secondAttribute="trailing" id="V7A-db-76N"/>
+                            <constraint firstItem="x3G-kI-yX9" firstAttribute="leading" secondItem="QS5-Rx-YEW" secondAttribute="leading" id="aYX-Yf-fPt"/>
+                            <constraint firstAttribute="bottom" secondItem="x3G-kI-yX9" secondAttribute="bottom" id="dgg-87-SN5"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="TodayStocks" id="m4z-Li-wDK">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="hRe-XN-WIe">
+                            <connections>
+                                <segue destination="PNQ-oC-sL3" kind="show" id="l4i-c9-Qn3"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="searchDisplayController" destination="ImC-kb-mkH" id="VPV-mv-hQF"/>
+                        <outlet property="tableView" destination="x3G-kI-yX9" id="fPY-Bu-Job"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
+                <searchDisplayController id="ImC-kb-mkH">
+                    <connections>
+                        <outlet property="delegate" destination="8rJ-Kc-sve" id="s1G-F0-ZTJ"/>
+                        <outlet property="searchContentsController" destination="8rJ-Kc-sve" id="cUQ-kh-Ks4"/>
+                        <outlet property="searchResultsDataSource" destination="8rJ-Kc-sve" id="Ome-mf-fwr"/>
+                        <outlet property="searchResultsDelegate" destination="8rJ-Kc-sve" id="Rhv-Z7-WNG"/>
+                    </connections>
+                </searchDisplayController>
+            </objects>
+            <point key="canvasLocation" x="1747" y="359"/>
+        </scene>
+        <!--Ticker Selector View Controller-->
+        <scene sceneID="WdR-9S-QqC">
+            <objects>
+                <viewController id="PNQ-oC-sL3" customClass="TickerSelectorViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="o8L-UW-n07"/>
+                        <viewControllerLayoutGuide type="bottom" id="TkM-2t-nPi"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="9XV-Ql-Cb3">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <searchBar contentMode="redraw" searchBarStyle="minimal" placeholder="Search" translatesAutoresizingMaskIntoConstraints="NO" id="WL0-7E-S2w">
+                                <rect key="frame" x="0.0" y="64" width="600" height="44"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters"/>
+                                <connections>
+                                    <outlet property="delegate" destination="PNQ-oC-sL3" id="nvd-rG-U9e"/>
+                                </connections>
+                            </searchBar>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" keyboardDismissMode="onDrag" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="fwd-ql-Nf1">
+                                <rect key="frame" x="0.0" y="108" width="600" height="492"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="WL0-7E-S2w" secondAttribute="trailing" constant="-16" id="4NA-dn-c2C"/>
+                            <constraint firstItem="fwd-ql-Nf1" firstAttribute="leading" secondItem="9XV-Ql-Cb3" secondAttribute="leadingMargin" constant="-16" id="FUW-B7-xP4"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="fwd-ql-Nf1" secondAttribute="trailing" constant="-16" id="SUY-0b-BeN"/>
+                            <constraint firstItem="fwd-ql-Nf1" firstAttribute="top" secondItem="WL0-7E-S2w" secondAttribute="bottom" id="XBX-8L-pvI"/>
+                            <constraint firstItem="WL0-7E-S2w" firstAttribute="top" secondItem="o8L-UW-n07" secondAttribute="bottom" id="ZcC-Cj-eJ8"/>
+                            <constraint firstItem="TkM-2t-nPi" firstAttribute="top" secondItem="fwd-ql-Nf1" secondAttribute="bottom" id="eEV-SY-IFc"/>
+                            <constraint firstItem="WL0-7E-S2w" firstAttribute="leading" secondItem="9XV-Ql-Cb3" secondAttribute="leadingMargin" constant="-16" id="g0t-nc-pQl"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="QLA-Nc-fyy">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="KiW-UT-Eop"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="searchBar" destination="WL0-7E-S2w" id="2hA-eD-Y7U"/>
+                        <outlet property="tableView" destination="fwd-ql-Nf1" id="SAK-W7-mgn"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7Ph-TU-ez7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2546" y="359"/>
+        </scene>
+        <!--Tickers-->
+        <scene sceneID="qMa-KB-YzC">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Dgk-ov-mvm" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Tickers" image="5539664D-3960-4A06-A44C-D722A07AB7FB" id="cPa-gy-q4n"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="nD7-1K-5JQ">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" red="0.1215686275" green="0.61568627450000002" blue="0.58039215690000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="20"/>
+                            <color key="textColor" red="0.1215686275" green="0.61568627450000002" blue="0.58039215690000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="8rJ-Kc-sve" kind="relationship" relationship="rootViewController" id="ZH9-uc-rFM"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1QU-FI-Gow" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="750" y="359.15492957746477"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="5539664D-3960-4A06-A44C-D722A07AB7FB" width="24" height="24">
+            <mutableData key="keyedArchiveRepresentation">
+YnBsaXN0MDDUAQIDBAUGOzxYJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3ASAAGGoK0HCBEW
+GxwgISksLzU4VSRudWxs1AkKCwwNDg8QViRjbGFzc1xOU0ltYWdlRmxhZ3NWTlNSZXBzV05TQ29sb3KA
+DBIAwAAAgAKACtISCRMVWk5TLm9iamVjdHOhFIADgAnSEgkXGqIYGYAEgAWACBAA0h0JHh9fEBROU1RJ
+RkZSZXByZXNlbnRhdGlvboAGgAdPEQUqTU0AKgAABIgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAegD/AP8A/wD/AHYAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAqAD/AP8A/wD/AKMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAzAD/AP8A/wD/AMcAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgDGALsAVAAdAKMA/QD/AP8A/wD/
+APwAoAAbAFYAvADCAAEAAAAAAAAAAAAAAAAAYwD/AP8A/wD+AP8A/wD/AP8A/wD/AP8A/wD+AP8A/wD/
+AF4AAAAAAAAAAAAAAA4A6QD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AOYADAAAAAAAAAAA
+AIkA/wD/AP8A/wD/AP8A/wDWAIsAjADYAP8A/wD/AP8A/wD/AP8AhAAAAAAAAAAAAFwA+AD/AP8A/wD/
+AP8AkQACAAAAAAADAJQA/wD/AP8A/wD/APcAVwAAAAAAAAAAAAAANQDiAP8A/wD/ANYAAgAAAAAAAAAA
+AAMA2AD/AP8A/wDgADMAAAAAAAAAAAAAAAAAAAB7AP8A/wD/AIsAAAAAAAAAAAAAAAAAjQD/AP8A/wB3
+AAAAAAAAAAAAAAAAAAAAAAB7AP8A/wD/AIwAAAAAAAAAAAAAAAAAjQD/AP8A/wB3AAAAAAAAAAAAAAAA
+AAAAOQDkAP8A/wD/ANgAAwAAAAAAAAAAAAQA2gD/AP8A/wDiADYAAAAAAAAAAAAAAF8A+QD/AP8A/wD/
+AP8AlAADAAAAAAAEAJcA/wD/AP8A/wD/APgAWwAAAAAAAAAAAIcA/wD/AP8A/wD/AP8A/wDYAI0AjQDa
+AP8A/wD/AP8A/wD/AP8AggAAAAAAAAAAAA0A5wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/
+AOQACwAAAAAAAAAAAAAAYQD/AP8A/wD+AP8A/wD/AP8A/wD/AP8A/wD+AP8A/wD/AFwAAAAAAAAAAAAA
+AAAAAQDBALYATwAZAJ0A/AD/AP8A/wD/APsAmQAXAFEAtwC+AAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAzAD/AP8A/wD/AMcAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAApwD/AP8A/wD/
+AKIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAdwD8APwA/AD8AHIAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADQEAAAMAAAABABgAAAEB
+AAMAAAABABgAAAECAAMAAAACAAgACAEDAAMAAAABAAEAAAEGAAMAAAABAAEAAAERAAQAAAABAAAACAES
+AAMAAAABAAEAAAEVAAMAAAABAAIAAAEWAAMAAAABABgAAAEXAAQAAAABAAAEgAEcAAMAAAABAAEAAAFS
+AAMAAAABAAIAAAFTAAMAAAACAAEAAQAAAADSIiMkJVokY2xhc3NuYW1lWCRjbGFzc2VzXxAQTlNCaXRt
+YXBJbWFnZVJlcKMmJyhfEBBOU0JpdG1hcEltYWdlUmVwWk5TSW1hZ2VSZXBYTlNPYmplY3TSIiMqK1dO
+U0FycmF5oioo0iIjLS5eTlNNdXRhYmxlQXJyYXmjLSoo0zAxCTIzNFdOU1doaXRlXE5TQ29sb3JTcGFj
+ZUQwIDAAEAOAC9IiIzY3V05TQ29sb3KiNijSIiM5OldOU0ltYWdlojkoXxAPTlNLZXllZEFyY2hpdmVy
+0T0+VHJvb3SAAQAIABEAGgAjAC0AMgA3AEUASwBUAFsAaABvAHcAeQB+AIAAggCHAJIAlACWAJgAnQCg
+AKIApACmAKgArQDEAMYAyAX2BfsGBgYPBiIGJgY5BkQGTQZSBloGXQZiBnEGdQZ8BoQGkQaWBpgGmgaf
+BqcGqgavBrcGugbMBs8G1AAAAAAAAAIBAAAAAAAAAD8AAAAAAAAAAAAAAAAAAAbWA
+</mutableData>
+        </image>
+    </resources>
+</document>
