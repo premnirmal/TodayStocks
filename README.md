@@ -3,7 +3,7 @@
 [StockTicker](https://play.google.com/store/apps/details?id=com.github.premnirmal.tickerwidget) ported to objective-C on iOS.
 
 
-[Android version]() available on [github](https://github.com/premnirmal/StockTicker) too!
+[Android version](https://github.com/premnirmal/StockTicker) available on [github](https://github.com/premnirmal/StockTicker) too!
 
 # App Store:
 
