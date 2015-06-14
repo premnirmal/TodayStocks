@@ -56,6 +56,20 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		BE01E28D1B2DECAC0070F457 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BEDDC9E91AE85142000B10D0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BEDDCA211AE85391000B10D0;
+			remoteInfo = NetworkKit;
+		};
+		BE01E28F1B2DECAC0070F457 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BEDDC9E91AE85142000B10D0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BEDDCA451AE853B8000B10D0;
+			remoteInfo = Widget;
+		};
 		BEC36A431AE9770A00310A70 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BEDDC9E91AE85142000B10D0 /* Project object */;
@@ -83,20 +97,6 @@
 			proxyType = 1;
 			remoteGlobalIDString = BEDDC9F01AE85142000B10D0;
 			remoteInfo = App;
-		};
-		BEDDCA371AE85391000B10D0 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BEDDC9E91AE85142000B10D0 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = BEDDCA211AE85391000B10D0;
-			remoteInfo = NetworkKit;
-		};
-		BEDDCA521AE853B8000B10D0 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BEDDC9E91AE85142000B10D0 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = BEDDCA451AE853B8000B10D0;
-			remoteInfo = Widget;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -430,8 +430,8 @@
 			buildRules = (
 			);
 			dependencies = (
-				BEDDCA381AE85391000B10D0 /* PBXTargetDependency */,
-				BEDDCA531AE853B8000B10D0 /* PBXTargetDependency */,
+				BE01E28E1B2DECAC0070F457 /* PBXTargetDependency */,
+				BE01E2901B2DECAC0070F457 /* PBXTargetDependency */,
 			);
 			name = TodayStocks;
 			productName = App;
@@ -706,6 +706,16 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		BE01E28E1B2DECAC0070F457 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BEDDCA211AE85391000B10D0 /* NetworkKit */;
+			targetProxy = BE01E28D1B2DECAC0070F457 /* PBXContainerItemProxy */;
+		};
+		BE01E2901B2DECAC0070F457 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BEDDCA451AE853B8000B10D0 /* Widget */;
+			targetProxy = BE01E28F1B2DECAC0070F457 /* PBXContainerItemProxy */;
+		};
 		BEC36A441AE9770A00310A70 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = BEDDCA211AE85391000B10D0 /* NetworkKit */;
@@ -725,16 +735,6 @@
 			isa = PBXTargetDependency;
 			target = BEDDC9F01AE85142000B10D0 /* TodayStocks */;
 			targetProxy = BEDDCA301AE85391000B10D0 /* PBXContainerItemProxy */;
-		};
-		BEDDCA381AE85391000B10D0 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = BEDDCA211AE85391000B10D0 /* NetworkKit */;
-			targetProxy = BEDDCA371AE85391000B10D0 /* PBXContainerItemProxy */;
-		};
-		BEDDCA531AE853B8000B10D0 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = BEDDCA451AE853B8000B10D0 /* Widget */;
-			targetProxy = BEDDCA521AE853B8000B10D0 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
