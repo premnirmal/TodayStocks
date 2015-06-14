@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <objects>
@@ -38,11 +38,9 @@
                     <constraint firstAttribute="bottomMargin" secondItem="JpP-gP-j14" secondAttribute="bottom" constant="-8" id="2Hz-Ep-g46"/>
                     <constraint firstAttribute="bottomMargin" secondItem="g0J-yv-JpV" secondAttribute="bottom" constant="-8" id="6V3-q0-bFn"/>
                     <constraint firstItem="JpP-gP-j14" firstAttribute="top" secondItem="fN5-KH-CWT" secondAttribute="topMargin" constant="-7" id="7H0-Yb-9l5"/>
-                    <constraint firstItem="JpP-gP-j14" firstAttribute="leading" secondItem="g0J-yv-JpV" secondAttribute="trailing" constant="8" id="giJ-bp-Gmc"/>
                     <constraint firstItem="Qtt-bP-eWN" firstAttribute="bottom" secondItem="fN5-KH-CWT" secondAttribute="bottomMargin" id="h6s-gd-FzM"/>
                     <constraint firstItem="Qtt-bP-eWN" firstAttribute="leading" secondItem="JpP-gP-j14" secondAttribute="trailing" constant="13" id="nTg-UX-GRU"/>
                     <constraint firstItem="Qtt-bP-eWN" firstAttribute="top" secondItem="fN5-KH-CWT" secondAttribute="topMargin" id="pjd-fc-hHA"/>
-                    <constraint firstItem="Qtt-bP-eWN" firstAttribute="leading" secondItem="JpP-gP-j14" secondAttribute="trailing" constant="13" id="rE1-n2-VtH"/>
                     <constraint firstItem="JpP-gP-j14" firstAttribute="leading" secondItem="g0J-yv-JpV" secondAttribute="trailing" constant="8" id="s4E-7K-BVi"/>
                     <constraint firstItem="g0J-yv-JpV" firstAttribute="top" secondItem="fN5-KH-CWT" secondAttribute="topMargin" constant="-9" id="ssF-aT-kVq"/>
                     <constraint firstItem="Qtt-bP-eWN" firstAttribute="trailing" secondItem="fN5-KH-CWT" secondAttribute="trailingMargin" id="vC3-IJ-TJI"/>
