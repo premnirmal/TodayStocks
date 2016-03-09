@@ -14,7 +14,7 @@
 
 +(void) searchForTicker:(NSString*) query :(id<TickerSearchDelegate>) delegate {
     
-    NSString *urlAsString = [NSString stringWithFormat:@"http://s.yimg.com/aq/autoc?callback=YAHOO.Finance.SymbolSuggest.ssCallback&region=US&lang=en-US&query=%@", query];
+    NSString *urlAsString = [NSString stringWithFormat:@"https://s.yimg.com/aq/autoc?callback=YAHOO.Finance.SymbolSuggest.ssCallback&region=US&lang=en-US&query=%@", query];
     NSString* urlTextEscaped = [urlAsString stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
     NSURL *url = [[NSURL alloc] initWithString:urlTextEscaped];
     NSLog(@"%@", urlAsString);
