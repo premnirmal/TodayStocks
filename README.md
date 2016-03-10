@@ -1,4 +1,4 @@
-# [TodayStocks](http://todaystocks.instapage.com/)
+# TodayStocks
 
 [StockTicker](https://play.google.com/store/apps/details?id=com.github.premnirmal.tickerwidget) ported to objective-C on iOS.
 
@@ -11,7 +11,7 @@
 
 ## Contributing
 
-Please fork this repository and contribute back using [pull requests](https://github.com/premnirmal/Magnet/pulls).
+Please fork this repository and contribute back using [pull requests](https://github.com/premnirmal/TodayStocks/pulls).
 
 ## Donations
 
