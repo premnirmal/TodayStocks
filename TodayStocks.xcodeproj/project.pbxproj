@@ -14,6 +14,8 @@
 		BE31274A1AFDAF8D008AF6DE /* PortfolioCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BE3127491AFDAF8D008AF6DE /* PortfolioCell.xib */; };
 		BE31274D1AFDAFA6008AF6DE /* PortfolioCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BE31274C1AFDAFA6008AF6DE /* PortfolioCell.m */; };
 		BE3127501AFDB275008AF6DE /* PaddedLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = BE31274F1AFDB275008AF6DE /* PaddedLabel.m */; };
+		BE344A351C9775D10081A14C /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE344A331C9775D10081A14C /* Fabric.framework */; };
+		BE344A361C9775D10081A14C /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE344A341C9775D10081A14C /* Crashlytics.framework */; };
 		BE7198131AF69124003F080D /* Cell.h in Headers */ = {isa = PBXBuildFile; fileRef = BE7198101AF69124003F080D /* Cell.h */; };
 		BE7198141AF69124003F080D /* Cell.m in Sources */ = {isa = PBXBuildFile; fileRef = BE7198111AF69124003F080D /* Cell.m */; };
 		BE7198151AF69124003F080D /* Cell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BE7198121AF69124003F080D /* Cell.xib */; };
@@ -135,6 +137,8 @@
 		BE31274C1AFDAFA6008AF6DE /* PortfolioCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PortfolioCell.m; sourceTree = "<group>"; };
 		BE31274E1AFDB275008AF6DE /* PaddedLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PaddedLabel.h; sourceTree = "<group>"; };
 		BE31274F1AFDB275008AF6DE /* PaddedLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PaddedLabel.m; sourceTree = "<group>"; };
+		BE344A331C9775D10081A14C /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Fabric.framework; sourceTree = "<group>"; };
+		BE344A341C9775D10081A14C /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Crashlytics.framework; sourceTree = "<group>"; };
 		BE7198101AF69124003F080D /* Cell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Cell.h; path = ../NetworkKit/Cell.h; sourceTree = "<group>"; };
 		BE7198111AF69124003F080D /* Cell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Cell.m; path = ../NetworkKit/Cell.m; sourceTree = "<group>"; };
 		BE7198121AF69124003F080D /* Cell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = Cell.xib; path = ../NetworkKit/Cell.xib; sourceTree = "<group>"; };
@@ -192,8 +196,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				BEDDCA391AE85391000B10D0 /* NetworkKit.framework in Frameworks */,
+				BE344A361C9775D10081A14C /* Crashlytics.framework in Frameworks */,
 				BEAE2AC61AF7B21600F293C8 /* Crashlytics.framework in Frameworks */,
 				BEAE2AC51AF7B21600F293C8 /* Fabric.framework in Frameworks */,
+				BE344A351C9775D10081A14C /* Fabric.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -234,6 +240,8 @@
 		BEDDC9E81AE85142000B10D0 = {
 			isa = PBXGroup;
 			children = (
+				BE344A331C9775D10081A14C /* Fabric.framework */,
+				BE344A341C9775D10081A14C /* Crashlytics.framework */,
 				BEAE2AC31AF7B21600F293C8 /* Fabric.framework */,
 				BEAE2AC41AF7B21600F293C8 /* Crashlytics.framework */,
 				BEBFFC2D1AF7A23200B54E3C /* TodayStocks.entitlements */,
@@ -847,14 +855,17 @@
 				CODE_SIGN_ENTITLEMENTS = TodayStocks.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = App/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = TodayStocks;
 				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -865,14 +876,17 @@
 				CODE_SIGN_ENTITLEMENTS = TodayStocks.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = App/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = TodayStocks;
 				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
@@ -997,7 +1011,6 @@
 		BEDDCA561AE853B8000B10D0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-2";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_ENTITLEMENTS = Widget/Widget.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -1018,7 +1031,6 @@
 		BEDDCA571AE853B8000B10D0 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-2";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_ENTITLEMENTS = Widget/Widget.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";

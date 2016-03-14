@@ -20,7 +20,7 @@
         [builder appendString:@","];
     }
     NSString *commaSeparatedTickers = [builder substringToIndex: (builder.length - 1)];
-    NSString *urlAsString = [NSString stringWithFormat:@"http://query.yahooapis.com/v1/public/yql?env=store://datatables.org/alltableswithkeys&format=json&q=select * from yahoo.finance.quotes where symbol in (\"%@\")", commaSeparatedTickers];
+    NSString *urlAsString = [NSString stringWithFormat:@"https://query.yahooapis.com/v1/public/yql?env=store://datatables.org/alltableswithkeys&format=json&q=select * from yahoo.finance.quotes where symbol in (\"%@\")", commaSeparatedTickers];
     NSString* urlTextEscaped = [urlAsString stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
     NSURL *url = [[NSURL alloc] initWithString:urlTextEscaped];
     NSLog(@"%@", urlAsString);
